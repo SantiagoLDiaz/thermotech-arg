@@ -23,33 +23,27 @@ const COMPANY_INFO = {
   <title>Thermotech Arg | Refrigeración Comercial e Industrial</title>
   <meta name="description" content="Servicios técnicos de refrigeración, climatización, electricidad y mantenimiento preventivo/correctivo para empresas e industrias." />
   
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+  <!-- Favicon Oficial Thermotech Arg -->
+  <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Script CDN Tailwind -->
   <script is:inline src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#0B132B] text-[#F3F3F5] font-['Montserrat',sans-serif] antialiased min-h-screen selection:bg-[#00B4D8] selection:text-white overflow-x-hidden">
 
-  <!-- Encabezado / Navegación -->
+  <!-- Header -->
   <header class="sticky top-0 z-50 bg-[#0B132B]/95 backdrop-blur-xl border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-      
-      <!-- Logo Marca -->
-      <a href="#" class="flex items-center gap-2.5 shrink-0">
-        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00B4D8] to-[#0077B6] flex items-center justify-center font-black text-white text-base shadow-[0_0_15px_rgba(0,180,216,0.4)]">
-          TH
-        </div>
-        <div class="flex flex-col">
-          <span class="text-sm sm:text-base font-extrabold tracking-wider text-white uppercase leading-none">Thermotech Arg</span>
-          <span class="text-[8px] sm:text-[9px] tracking-widest text-[#00B4D8] font-semibold uppercase mt-0.5">Refrigeración</span>
-        </div>
+      <!-- Logo Marca Oficial -->
+      <a href="#" class="flex items-center gap-2.5 shrink-0 group">
+        <img 
+          src="/images/logoth.jpeg" 
+          alt="Thermotech Arg" 
+          class="h-10 sm:h-12 w-auto object-contain rounded-lg transition-transform group-hover:scale-105"
+        />
       </a>
 
-      <!-- Menú Desktop -->
       <nav class="hidden md:flex items-center gap-6 text-xs tracking-widest uppercase font-semibold text-zinc-300">
         <a href="#inicio" class="hover:text-[#00B4D8] transition">Inicio</a>
         <a href="#servicios" class="hover:text-[#00B4D8] transition">Servicios</a>
@@ -58,20 +52,16 @@ const COMPANY_INFO = {
         <a href="#contacto-directo" class="hover:text-[#00B4D8] transition">Contacto</a>
       </nav>
 
-      <!-- Botón Solicitud WhatsApp -->
       <a href={`https://wa.me/${WSP_NUMBER}?text=${WSP_MESSAGE}`} target="_blank" class="bg-gradient-to-r from-[#00B4D8] to-[#0077B6] hover:brightness-110 text-white font-bold text-[10px] sm:text-xs tracking-wider uppercase px-4 sm:px-5 py-2 sm:py-2.5 rounded-full transition-all shadow-[0_0_15px_rgba(0,180,216,0.3)] flex items-center gap-1.5 shrink-0">
         <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
         <span class="hidden xs:inline">Solicitar </span><span>Visita</span>
       </a>
-
     </div>
   </header>
 
-  <!-- Hero Section Mejorado (Grilla 2 Columnas para PC) -->
+  <!-- Hero Section -->
   <section id="inicio" class="relative min-h-[85vh] flex items-center px-4 sm:px-6 lg:px-12 z-10 overflow-hidden bg-gradient-to-b from-[#0B132B] via-[#1C2541] to-[#0B132B] py-12 lg:py-16">
     <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-20">
-      
-      <!-- Columna Izquierda: Texto e Invocación -->
       <div class="lg:col-span-7 space-y-5">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00B4D8]/10 border border-[#00B4D8]/30 text-[#00B4D8] text-[10px] sm:text-xs font-bold uppercase tracking-wider">
           <span class="w-2 h-2 rounded-full bg-[#00B4D8] animate-ping shrink-0"></span>
@@ -94,7 +84,6 @@ const COMPANY_INFO = {
         </div>
       </div>
 
-      <!-- Columna Derecha: Tarjeta Visual que Llena el Espacio en PC -->
       <div class="lg:col-span-5 hidden lg:block">
         <div class="relative bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-xl shadow-2xl space-y-6">
           <div class="flex items-center justify-between border-b border-white/10 pb-4">
@@ -129,7 +118,6 @@ const COMPANY_INFO = {
           </ul>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -190,12 +178,21 @@ const COMPANY_INFO = {
         <p class="text-xs text-zinc-300 leading-relaxed mb-4">
           Cumplimos con estrictas normativas de seguridad e higiene laboral, EPP adaptados a plantas industriales y documentación legal completa para homologación de proveedores.
         </p>
-        <ul class="space-y-2 text-xs text-zinc-300">
+        <ul class="space-y-2 text-xs text-zinc-300 mb-6">
           <li class="flex items-center gap-2"><span class="text-[#00B4D8] font-bold">✓</span> Capacidad de gestión documental para ingreso industrial.</li>
           <li class="flex items-center gap-2"><span class="text-[#00B4D8] font-bold">✓</span> Personal técnico equipado y capacitado para tareas de riesgo.</li>
           <li class="flex items-center gap-2"><span class="text-[#00B4D8] font-bold">✓</span> Facturación electrónica e inscripción impositiva completa.</li>
         </ul>
+
+        <!-- Botón a /trabajos -->
+        <div>
+          <a href="/trabajos" class="inline-flex items-center gap-2 bg-[#00B4D8]/10 hover:bg-[#00B4D8]/20 text-[#00B4D8] hover:text-white font-extrabold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl border border-[#00B4D8]/40 transition shadow-[0_0_15px_rgba(0,180,216,0.2)]">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            <span>Ver Trabajos Realizados</span>
+          </a>
+        </div>
       </div>
+
       <div class="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
         <h4 class="text-sm sm:text-base font-bold uppercase text-white mb-2">¿Representa a una gran empresa o industria?</h4>
         <p class="text-xs text-zinc-400 mb-6">Solicite nuestra Carpeta Técnica y Comercial formal.</p>
@@ -206,7 +203,7 @@ const COMPANY_INFO = {
     </div>
   </section>
 
-  <!-- Sección de Contacto Directo Exclusiva por WhatsApp -->
+  <!-- Contacto Directo WhatsApp -->
   <section id="contacto-directo" class="py-16 sm:py-20 px-4 max-w-4xl mx-auto border-t border-white/5 relative z-10 text-center">
     <div class="mb-8 space-y-2">
       <span class="text-xs uppercase tracking-[0.2em] font-bold text-[#00B4D8]">Atención Comercial Directa</span>
